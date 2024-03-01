@@ -11,6 +11,9 @@ https://www.docker.com/get-started
 
 Choose Docker Desktop
 
+![image](https://github.com/Stiegler0/kubernetes-minikube/assets/145070468/500d6c1b-356e-42ec-805a-fb2b37b9357e)
+
+
 ### installation for Windows home
 
 https://docs.docker.com/docker-for-windows/install-windows-home/
