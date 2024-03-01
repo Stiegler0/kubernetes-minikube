@@ -46,6 +46,15 @@ Compile the Java project:
 ```
 ./gradlew build
 ```
+![image](https://github.com/Stiegler0/kubernetes-minikube/assets/145070468/846ff1aa-1d54-4847-9222-b912e7a16630)
+
+J'ai changé la version jdk utilisé (de 11  en 17) ensuite:
+```
+./gradlew --refresh-dependencies
+```
+![image](https://github.com/Stiegler0/kubernetes-minikube/assets/145070468/1d8b95e4-bb70-4363-99c2-80f4cfa9469d)
+
+
 Under Linux, or
 ```
 .\gradlew build
@@ -58,6 +67,8 @@ docker build -t myservice .
 ```
 
 Check the image:
+![image](https://github.com/Stiegler0/kubernetes-minikube/assets/145070468/2a826480-ec95-4d25-978e-026080c66fd9)
+
 ```
 docker images
 ```
