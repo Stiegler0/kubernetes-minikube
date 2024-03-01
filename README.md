@@ -24,6 +24,7 @@ https://minikube.sigs.k8s.io/docs/start/
 ![image](https://github.com/Stiegler0/kubernetes-minikube/assets/145070468/929bf28f-b726-400a-bfda-9da81f73c3ee)
 
 Minikube provides a dashboard (web portal). Access the dashboard using the following command:
+![image](https://github.com/Stiegler0/kubernetes-minikube/assets/145070468/db9b9491-6692-48a8-a25d-53d1012a9dc4)
 
 ```
 minikube dashboard
