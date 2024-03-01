@@ -65,6 +65,8 @@ Build the docker image:
 ```
 docker build -t myservice .
 ```
+![image](https://github.com/Stiegler0/kubernetes-minikube/assets/145070468/bd1250a8-48b7-45f3-aa27-f5f08e0b5794)
+
 
 Check the image:
 ![image](https://github.com/Stiegler0/kubernetes-minikube/assets/145070468/2a826480-ec95-4d25-978e-026080c66fd9)
@@ -77,6 +79,8 @@ Start the container:
 ```
 docker run -p 4000:8080 -t myservice
 ```
+![image](https://github.com/Stiegler0/kubernetes-minikube/assets/145070468/040ec4aa-f510-41f2-9d81-c10f340d4f72)
+
 
 8080 is the port of the web service, while 4000 is the port for accessing the container. Test the web service using a web browser: http://localhost:4000 It displays hello.
 
@@ -98,6 +102,8 @@ Retreive the image ID:
 ```
 docker images
 ```
+![image](https://github.com/Stiegler0/kubernetes-minikube/assets/145070468/49e49289-7594-4552-88c5-c90033fb8e49)
+
 
 Tag the docker image: 
 ```
@@ -105,6 +111,7 @@ docker tag imageID yourDockerHubName/imageName:version
 ```
 
 Example: `docker tag 1dsd512s0d myDockerID/myservice:1`
+![image](https://github.com/Stiegler0/kubernetes-minikube/assets/145070468/f682a7cf-52e9-4210-aceb-6a895b9c29ca)
 
 Login to docker hub: 
 ```
@@ -125,15 +132,19 @@ docker push yourDockerHubName/imageName:version
 ```
 
 Example: `docker push myDockerID/myservice:1`
+![image](https://github.com/Stiegler0/kubernetes-minikube/assets/145070468/d2713cc2-dacf-4b26-890b-467135b36cbd)
 
 ## Create a kubernetes deployment from a Docker image
 
 ```
 kubectl get nodes
 ```
+![image](https://github.com/Stiegler0/kubernetes-minikube/assets/145070468/87658aca-8e95-421c-ad5b-99e9f56f31a9)
+
 ```
 kubectl create deployment myservice --image=efrei/myservice:1
 ```
+![image](https://github.com/Stiegler0/kubernetes-minikube/assets/145070468/e992d5fc-8c3e-4d58-aa44-e99b02c0b604)
 
 The image used comes from the Docker hub: https://hub.docker.com/r/efrei/myservice/tags
 
@@ -143,6 +154,8 @@ Check the pod:
 ```
 kubectl get pods
 ```
+![image](https://github.com/Stiegler0/kubernetes-minikube/assets/145070468/ba8398fb-5537-4536-b07c-32c9044f9b54)
+
 
 Check if the state is running.
 
