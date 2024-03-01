@@ -21,6 +21,7 @@ https://docs.docker.com/docker-for-windows/install-windows-home/
 ## Kuberntes Minikube installation
 
 https://minikube.sigs.k8s.io/docs/start/
+![image](https://github.com/Stiegler0/kubernetes-minikube/assets/145070468/929bf28f-b726-400a-bfda-9da81f73c3ee)
 
 Minikube provides a dashboard (web portal). Access the dashboard using the following command:
 
